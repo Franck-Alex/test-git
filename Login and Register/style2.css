@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+} 
+
+.navigation a{
+    position: relative;
+    color: aliceblue;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+.navigation .btnLogin{
+    width: 130px;
+    height: 50px;
+    outline: none;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1em;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navigation .btnLogin:hover{
+    background: #fff;
+    color: midnightblue;
+    transition: 0.5s;
+}
+
+/* la barre du bas et sa transition*/
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    transform-origin: right;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* Style du corps */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: midnightblue;
+    background-size: cover;
+     background-position: center;
+}
+
+.conteneur{
+    background: #00fad92e;
+    padding: 40px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 0px 9px black;
+}
+
+.Login h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+header h2{
+    cursor: pointer;
+}
+header h2:hover{
+    background: #fff;
+    color: midnightblue;
+    border-radius: 7px;
+    padding: 0px 15px;
+    transition: .5s;
+}
+
+.input-box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 20px 0px 0px;
+    border-bottom: 2px solid midnightblue;
+}
+.input-box input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.2em;
+    color: #fff;
+}
+.input-box input:focus~label, .input-box input:hover~label, .input-box input:valid~label{
+    top: -15px;
+    transition: 0.5s;
+}
+
+.input-box label{
+    position: absolute;
+    top: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.remenber-forgot{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remenber-forgot a{
+    text-decoration: none;
+    color: midnightblue;
+}
+.remenber-forgot a:hover{
+    color: #fff;
+}
+
+form button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 4px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    background: midnightblue;
+}
+form button:hover{
+    transition: 0.5s;
+    transform: scale(0.95);
+}
+
+.account-create{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.account-create a{
+    text-decoration: none;
+    color: midnightblue;
+}
+.account-create a:hover{
+    color: rgb(255, 255, 255);
+}
