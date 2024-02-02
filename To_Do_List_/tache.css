@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script&family=Indie+Flower&family=Roboto:wght@100&family=Rubik+Iso&family=Satisfy&family=Tangerine:wght@400;700&display=swap');
+body{
+    background-color: darkkhaki;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+}
+
+.conteneur{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+}
+.sec_saisie{
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+input{
+    width: 85%;
+    border: 1px solid darkkhaki;
+    padding: 10px;
+    font-family: 'Acme', sans-serif;
+    border-radius: 10px 0px 0px 10px;
+    letter-spacing: 3px;
+    outline: 0;
+}
+button{
+    width: 15%;
+    background-color: darkkhaki;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 25px;
+    color: white;
+    font-weight: 200vh;
+}
+
+button:hover{
+    transform: scale(0.95);
+}
+
+.paragraphe{
+    padding: 5px;
+    font-weight: lighter;
+    border-radius: 6px;
+    background-color: darkkhaki;
+    word-break: break-all;
+    cursor: pointer;
+    letter-spacing: 3px;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+
+.paragraphe_click{
+    background-color: rgb(255, 89, 89);
+    text-decoration: line-through;
+    color: aliceblue;
+}
